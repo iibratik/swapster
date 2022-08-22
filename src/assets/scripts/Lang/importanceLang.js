@@ -15,6 +15,6 @@ const imports = {
         importSpecTi3:'Anonymity and security',
         importSpecSub1:'Transactions to other Swapster users are absolutely free. You can send any cryptocurrency to a friend in a second with one click - just know his ID.',
         importSpecSub2:'Swapster commissions are already generously rewarded to miners, so all your transfers will be delivered as quickly as possible. USDT - 1 minute. BTC, ETH - 10 minutes.',
-        importSpecSub3:'Мы не собираем и не передаём персональные данные пользователей. Вам доступны все функции бота без верификации личности. Безопасность ваших средств обеспечена безопасностью вашего Telegram-аккаунта.',
+        importSpecSub3:'We do not collect or share personal data of users. You have access to all the functions of the bot without identity verification. The security of your funds is ensured by the security of your Telegram account.',
     }
 }

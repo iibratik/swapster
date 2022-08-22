@@ -1,7 +1,4 @@
 <template>
-<<<<<<< HEAD
-    
-=======
     <nav class="header__nav">
         <div class="header__nav-logo">
             <a href="#!"><img src="@/assets/images/logo.png" alt="" class="logo"></a>
@@ -11,9 +8,9 @@
         </ul>
         <div class="header__nav-block">
             <div class="header__nav-translation">
-                <h3 class="header__nav-lang"> 
-                    <span >ru</span>
-                     | 
+                <h3 class="header__nav-lang">
+                    <span>ru</span>
+                     |
                     <span> en</span>
                     </h3>
             </div>
@@ -22,7 +19,6 @@
             </a>
         </div>
     </nav>
->>>>>>> e31c458dc85bf3292dbcc1087201bf8111927eed
 </template>
 
 <script>
@@ -30,6 +26,7 @@
 export default {
     data(){
         return {
+            
         }
     },
     computed: {
