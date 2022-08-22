@@ -1,5 +1,4 @@
 .header{
-    background: $black;
     &__nav{
         padding: 37px 71px;
         display: flex;
@@ -7,7 +6,9 @@
         align-items: center;
         &-menu {
             display: flex;
-            gap: 30px;
+            max-width: 714px;
+            width: 100%;
+            justify-content: space-between;
         }
         &-link {
             color: $white;
@@ -42,13 +43,15 @@
             font-size: 16px;
             line-height: 150%;
             opacity: 0.6;
-            & span {
-                cursor: pointer;
-                &.active {
-                    opacity: 1;
-                    font-weight: 700;
-                }
+            cursor: pointer;
+            &.active {
+                opacity: 1;
+                font-weight: 700;
             }
+        }
+        &-translation{
+            display: flex;
+            gap: 7px;
         }
     }
 }
