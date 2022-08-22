@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
@@ -10,7 +10,11 @@ ul {
     list-style: none;
 }
 
-body{
+html {
+    background: #06071B;
+}
+
+body {
     font-family: 'SF';
     font-weight: 400;
 }
