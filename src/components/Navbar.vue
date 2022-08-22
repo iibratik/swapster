@@ -1,7 +1,4 @@
 <template>
-<<<<<<< HEAD
-    
-=======
     <nav class="header__nav">
         <div class="header__nav-logo">
             <a href="#!"><img src="@/assets/images/logo.png" alt="" class="logo"></a>
@@ -22,7 +19,6 @@
             </a>
         </div>
     </nav>
->>>>>>> e31c458dc85bf3292dbcc1087201bf8111927eed
 </template>
 
 <script>
