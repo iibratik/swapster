@@ -1,0 +1,54 @@
+.header{
+    background: $black;
+    &__nav{
+        padding: 37px 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-menu {
+            display: flex;
+            gap: 30px;
+        }
+        &-link {
+            color: $white;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            transition: all 500ms;
+            &:hover {
+                color:  #07DBB4;
+                padding-bottom: 4px;
+                border-bottom: 1px solid #07DBB4;
+            }
+        }
+        &-signin {
+            padding: 13px 37px;
+            color: $white;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            border: 2px solid #07DBB4;
+            filter: drop-shadow(0px 0px 11px #45AFC7);
+            border-radius: 15px;
+        }
+        &-block {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        &-lang {
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            opacity: 0.6;
+            & span {
+                cursor: pointer;
+                &.active {
+                    opacity: 1;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
