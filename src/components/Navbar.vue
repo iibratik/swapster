@@ -9,9 +9,9 @@
         <div class="header__nav-block">
             <div class="header__nav-translation">
                 <h3 class="header__nav-lang">
-                    <span>ru</span>
+                    <span @click="changeLang">ru</span>
                      |
-                    <span> en</span>
+                    <span @click="changeLang"> en</span>
                     </h3>
             </div>
             <a href="#!" class="header__nav-signin">
@@ -26,13 +26,16 @@
 export default {
     data(){
         return {
-            
+
         }
     },
     computed: {
         getMenuList(){
             return this.$store.getters.getMenuList
         }
+    },
+    methods:{
+        
     }
 }
 
