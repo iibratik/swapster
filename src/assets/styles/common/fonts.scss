@@ -1,0 +1,12 @@
+$SFProDisplay:  ('Bold', 700),
+                ('Medium',500),
+                ('Regular',400),
+                ('LightItalic',300);
+
+@each $name , $weight in $SFProDisplay {
+    @font-face {
+        font-family: 'SF';
+        src: url("@/assets/fonts/SFProDisplay-#{$name}.ttf");
+        font-weight: $weight;
+    }
+}
