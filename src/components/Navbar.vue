@@ -8,14 +8,10 @@
         </ul>
         <div class="header__nav-block">
             <div class="header__nav-translation">
-                <h3 class="header__nav-lang">
-                    <span @click="changeLang">ru</span>
-                     |
-                    <span @click="changeLang"> en</span>
-                    </h3>
-                <h3 class="header__nav-lang" @click="ruActive = true; enActive=false" :class="{active: ruActive}">ru</h3>
+
+                <h3 class="header__nav-lang" @click="changeLang" :class="{active: ruActive}">ru</h3>
                 <p class="header__nav-lang">|</p>
-                <h3 class="header__nav-lang" @click="enActive = true; ruActive=false" :class="{active: enActive}">en</h3>
+                <h3 class="header__nav-lang" @click="changeLang" :class="{active: enActive}">en</h3>
             </div>
             <a href="#!" class="header__nav-signin">
                 Присоединиться
@@ -29,8 +25,8 @@
 export default {
     data(){
         return {
-            ruActive:true,
-            enActive: false,
+            ruActive: localStorage.getItem('lang') === 'ru'? true : false,
+            enActive: localStorage.getItem('lang') === 'en'? true : false,
 
         }
     },
@@ -39,10 +35,28 @@ export default {
             return this.$store.getters.getMenuList
         }
     },
-
     methods:{
+        changeLang(){
+            if (localStorage.getItem('lang') == "en") {
+                this.ruActive = false;
+                this.enActive = true;
+                localStorage.setItem('lang', 'ru')
+            }else {
+                localStorage.setItem('lang', 'en')
+                this.enActive = false;
+                this.ruActive = true;
 
-    }
+            }
+
+        }
+    },
+    created(){
+            if (window.navigator.language === 'en-US') {
+                localStorage.setItem("lang","en")
+            }else if(window.navigator.language === 'ru-Ru') {
+                localStorage.setItem("lang","ru")
+            }
+        }
 
 }
 

@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import Lang from '@/assets/scripts/Lang/Lang'
 
 export default createStore({
   state: {
@@ -33,6 +34,7 @@ export default createStore({
     }
   },
   mutations: {
+
   },
   actions: {
   },

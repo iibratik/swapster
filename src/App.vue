@@ -18,13 +18,7 @@ export default {
             userLang:"",
         }
     },
-    created(){
-            if (window.navigator.language === 'en-US') {
-                localStorage.setItem("lang","en")
-            }else if(window.navigator.language === 'ru-Ru') {
-                localStorage.setItem("lang","ru")
-            }
-        }
+
     }
 
 </script>
