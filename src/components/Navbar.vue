@@ -13,6 +13,9 @@
                      |
                     <span @click="changeLang"> en</span>
                     </h3>
+                <h3 class="header__nav-lang" @click="ruActive = true; enActive=false" :class="{active: ruActive}">ru</h3>
+                <p class="header__nav-lang">|</p>
+                <h3 class="header__nav-lang" @click="enActive = true; ruActive=false" :class="{active: enActive}">en</h3>
             </div>
             <a href="#!" class="header__nav-signin">
                 Присоединиться
@@ -26,6 +29,8 @@
 export default {
     data(){
         return {
+            ruActive:true,
+            enActive: false,
 
         }
     },
@@ -34,9 +39,11 @@ export default {
             return this.$store.getters.getMenuList
         }
     },
+
     methods:{
-        
+
     }
+
 }
 
 </script>
