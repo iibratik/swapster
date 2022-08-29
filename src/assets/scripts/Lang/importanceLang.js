@@ -18,3 +18,4 @@ const imports = {
         importSpecSub3:'We do not collect or share personal data of users. You have access to all the functions of the bot without identity verification. The security of your funds is ensured by the security of your Telegram account.',
     }
 }
+export default imports
