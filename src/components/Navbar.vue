@@ -19,7 +19,7 @@
             </a>
         </div>
         </div>
-        <button @click="burger = true" class="header__nav-btn">burger</button>
+        <button @click="burger = !burger" class="header__nav-btn">burger</button>
     </nav>
 </template>
 

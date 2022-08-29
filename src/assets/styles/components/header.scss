@@ -1,8 +1,10 @@
-.header{  
+.header{
+    overflow: hidden;
     .burger {
         display: flex;
         align-items: center;
         width: 100%;
+        flex-grow: 1;
         justify-content: space-between;
         @include media(1320px) {
             flex-direction: column;
@@ -14,13 +16,13 @@
             height: 100vh;
             padding: 50px 0;
             border-right: 1px solid rgb(39, 39, 68);
-            overflow: auto;
+            overflow: hidden;
             transition: right 300ms;
             &.active {
                 right: 0;
             }
     }
-    }  
+    }
     &__nav{
         padding: 37px 71px;
         display: flex;
@@ -31,10 +33,12 @@
             max-width: 714px;
             width: 100%;
             justify-content: space-between;
+            align-self: center;
+            flex-grow: 1;
             @include media(1320px){
                 flex-direction: column;
             }
-            }        
+            }
         &-link {
             color: $white;
             font-weight: 400;
