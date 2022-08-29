@@ -1,4 +1,3 @@
-$xxl: 1320px;
 $xl: 1140px;
 $lg: 960px;
 $md: 720px;
@@ -13,14 +12,11 @@ $gutters-side: calc($gutters / 2);
 }
 
 @mixin container($padding: $gutters-side) {
-    max-width: $xxl;
+    max-width: $xl;
     width: 100%;
     margin: 0 auto;
     padding: 0 $padding;
-    
-    @include media(1399px) {
-        max-width: $xl;
-    }
+
     @include media(1199px) {
         max-width: $lg;
     }

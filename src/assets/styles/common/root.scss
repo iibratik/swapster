@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
+
 }
 a {
     text-decoration: none;
@@ -12,11 +13,13 @@ ul {
 
 html {
     background: #06071B;
+    overflow-x: hidden;
 }
 
 body{
     font-family: 'SF';
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .container {
