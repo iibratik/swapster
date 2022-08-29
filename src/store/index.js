@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import Lang from '@/assets/scripts/Lang'
+import Lang from '@/assets/scripts/Lang/Lang'
 
 export default createStore({
   state: {

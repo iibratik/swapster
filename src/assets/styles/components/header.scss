@@ -1,4 +1,28 @@
 .header{
+    overflow: hidden;
+    .burger {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-grow: 1;
+        justify-content: space-between;
+        @include media(1320px) {
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: -100%;
+            background: #090a1f;
+            width: 300px;
+            height: 100vh;
+            padding: 50px 0;
+            border-right: 1px solid rgb(39, 39, 68);
+            overflow: hidden;
+            transition: right 300ms;
+            &.active {
+                right: 0;
+            }
+    }
+    }
     &__nav{
         padding: 37px 71px;
         display: flex;
@@ -9,7 +33,12 @@
             max-width: 714px;
             width: 100%;
             justify-content: space-between;
-        }
+            align-self: center;
+            flex-grow: 1;
+            @include media(1320px){
+                flex-direction: column;
+            }
+            }
         &-link {
             color: $white;
             font-weight: 400;
@@ -20,6 +49,15 @@
                 color:  #07DBB4;
                 padding-bottom: 4px;
                 border-bottom: 1px solid #07DBB4;
+            }
+            @include media(1320px){
+                display: block;
+                text-align: center;
+                padding: 10px;
+                &:hover {
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
             }
         }
         &-signin {
@@ -36,6 +74,9 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            @include media(1320px){
+                flex-direction: column;
+            }
         }
         &-lang {
             color: white;
@@ -53,6 +94,26 @@
         &-translation{
             display: flex;
             gap: 7px;
+        }
+        &-btn {
+            display: none;
+            @include media(1320px){
+                display: block;
+            }
+        }
+    }
+    .bg {
+        position: absolute;
+        background: rgb(0, 0, 0, 0.30);
+        height: 100vh;
+        width: 100vw;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        &.active {
+            display: block;
         }
     }
 }
