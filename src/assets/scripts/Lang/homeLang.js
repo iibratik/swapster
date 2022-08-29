@@ -8,7 +8,7 @@ const homeLang = {
     en:{
         mainTitle:'Crypto wallet in your telegram',
         mainSubTitle:'Swapster is a reliable crypto wallet and exchange that allows you to store and exchange cryptocurrency, as well as withdraw fiat money directly to your card. And all this without leaving the telegram.',
-        btnStartSwapster:'Start Swapster',
+        btnStartSwapster:'Launch Swapster',
 
     }
 }
