@@ -15,9 +15,9 @@
                 <p class="header__nav-lang">|</p>
                 <h3 class="header__nav-lang" @click="changeLang" :class="{active: enActive}">en</h3>
             </div>
-            <a href="#!" class="header__nav-signin">
-                Присоединиться
-            </a>
+            <green-btn href="#!" :className="'header__nav-signin'">
+                Lang.en.btnJoin
+            </green-btn>
         </div>
         </div>
         <button @click="burger = !burger" class="header__nav-btn">burger</button>
@@ -41,6 +41,7 @@ export default {
         getMenuList(){
             return this.$store.getters.getMenuList
         }
+        // getLang(){}
     },
     methods:{
         changeLang(){
