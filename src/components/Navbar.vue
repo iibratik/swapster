@@ -17,14 +17,6 @@
             </green-btn>
         </div>
         <glov-bg>dawdwad</glov-bg>
-        <!-- <button class="header__nav-btn" @click="burger = !burger"><img src="@/assets/images/icons/menu.svg" alt=""></button>
-        <div class="header__nav-burger" :class="{active: burger}">
-            <ul class="header__nav-menu nav-burger">
-                <li v-for="link in getMenuList" :key="link.id"><a href="#!" class="header__nav-link">{{link.title}}</a></li>
-            </ul>
-        <a href="" class="header__nav-signin">Присоединиться</a>
-        </div>
-        <button @click="burger = !burger" class="header__nav-btn">burger</button> -->
     </nav>
 </template>
 
