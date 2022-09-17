@@ -1,5 +1,4 @@
 .header{
-    overflow: hidden;
     .burger {
         display: flex;
         align-items: center;
@@ -114,6 +113,47 @@
         display: none;
         &.active {
             display: block;
+        }
+    }
+    &__container{
+        display: flex;
+        // flex-direction: row;
+    }
+    &__content{
+        position: relative;
+        &-offer{
+            max-width: 630px;
+            width: 100%;
+            height: 385px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            gap: 40px;
+        }
+        &-title{
+            width: 100%;
+        }
+        &-text{
+            max-width: 520px;
+            width: 100%;
+        }
+        &-btn{
+            margin-top: 10px;
+        }
+        &-img{
+            position: absolute;
+            left: -10%;
+            top: 0%;
+        }
+        &-images{
+            max-width: 633px;
+            width: 100%;
+            height: 477px;
+            position: relative;
+        }
+        &-line{
+            position: absolute;
+            top: 0;
         }
     }
 }

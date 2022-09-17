@@ -10,7 +10,6 @@
         </ul>
         <div class="header__nav-block">
             <div class="header__nav-translation">
-
                 <h3 class="header__nav-lang" @click="changeLang" :class="{active: ruActive}">ru</h3>
                 <p class="header__nav-lang">|</p>
                 <h3 class="header__nav-lang" @click="changeLang" :class="{active: enActive}">en</h3>
