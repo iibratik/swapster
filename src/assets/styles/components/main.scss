@@ -1,0 +1,60 @@
+.main {
+    &__container {
+        @extend .container;
+    }
+    &__benefits {
+        margin-bottom: 100px;
+        &-block {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 30px;
+        }
+        & h2.title {
+            text-align: center;
+            margin-bottom: 51px;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 17px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            &:nth-child(1){
+                padding: 29px 30px 27px 30px;
+                grid-column: span 2;
+            }
+            &:nth-child(2){
+                padding: 30px 39px 99px 40px;
+                grid-column: span 2;
+            } 
+            &:nth-child(3){
+                padding: 34px 39px 51px 40px;
+                grid-column: span 2;
+            }
+            &:nth-child(4){
+                grid-column: span 3;
+                padding: 22px 41px 36px 41px;
+            }
+            &:nth-child(5){
+                grid-column: span 3;
+                padding: 29px 49px 36px 50px;
+            }
+        }
+        &-title {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #FFFFFF;
+            text-align: center;
+            opacity: 0.9;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.6;
+        }
+    }
+}
