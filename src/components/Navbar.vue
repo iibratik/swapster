@@ -52,6 +52,7 @@ export default {
     methods:{
         changeLang(){
             if (localStorage.getItem('lang') == "en") {
+                
                 this.ruActive = false;
                 this.enActive = true;
                 localStorage.setItem('lang', 'ru')
