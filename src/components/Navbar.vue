@@ -8,13 +8,12 @@
         </ul>
         <div class="header__nav-block">
             <div class="header__nav-translation">
-
                 <h3 class="header__nav-lang" @click="changeLang" :class="{active: ruActive}">ru</h3>
                 <p class="header__nav-lang">|</p>
                 <h3 class="header__nav-lang" @click="changeLang" :class="{active: enActive}">en</h3>
             </div>
-            <green-btn href="#!" :className="'header__nav-signin'">
-                Lang.en.btnJoin
+            <green-btn href="#">
+                Присоединиться
             </green-btn>
         </div>
         <button class="header__nav-btn" @click="burger = !burger"><img src="@/assets/images/icons/menu.svg" alt=""></button>
@@ -30,7 +29,6 @@
 
 <script>
 
-import { mapGetters } from "vuex"
 
 export default {
     data(){
@@ -46,13 +44,12 @@ export default {
     computed: {
         getMenuList(){
             return this.$store.getters.getMenuList
-        }
-        // getLang(){}
+        },
     },
     methods:{
         changeLang(){
             if (localStorage.getItem('lang') == "en") {
-                
+
                 this.ruActive = false;
                 this.enActive = true;
                 localStorage.setItem('lang', 'ru')

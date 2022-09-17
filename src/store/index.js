@@ -5,27 +5,27 @@ export default createStore({
   state: {
     menuList: [{
       id: 1,
-      title: Lang.en.mainNavLink,
+      title: Lang.ru.mainNavLink,
     },
     {
       id:2,
-      title: Lang.en.tariffsLink,
+      title: Lang.ru.tariffsLink,
     },
     {
       id:3,
-      title: Lang.en.worksLink,
+      title: Lang.ru.worksLink,
     },
     {
       id:4,
-      title: Lang.en.checkLink
+      title: Lang.ru.checkLink
     },
     {
       id:5,
-      title: Lang.en.blogLink
+      title: Lang.ru.blogLink
     },
     {
       id:6,
-      title: Lang.en.support,
+      title: Lang.ru.support,
     },],
     lang:Lang,
     MainLang: window.navigator.language,
