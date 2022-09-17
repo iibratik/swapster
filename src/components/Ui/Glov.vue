@@ -1,12 +1,12 @@
 <template>
-    <div :class="name">
+    <div class="bg glov-bg">
         <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
-        name:'bg glov-bg'
+        name:'glov-bg'
     }
 </script>
 

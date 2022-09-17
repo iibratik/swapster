@@ -1,11 +1,12 @@
 <template>
-    <a href="#" :class="className">
+    <a href="#" class="btn btn-green">
     <slot></slot>
     </a>
 </template>
 
 <script>
     export default {
+        name:'green-btn',
         props:{
             className:{
                 type:String,
@@ -15,7 +16,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+    @import '@/assets/styles/common/common.scss';
     .btn{
     padding: 13px 37px;
     color: $white;
@@ -25,8 +27,11 @@
 
     }
     .btn-green{
-        border: 2px solid #07DBB4;
+        border: 2px solid $lightGreen;
         filter: drop-shadow(0px 0px 11px #45AFC7);
         border-radius: 15px;
+        &:hover{
+
+        }
     }
 </style>
