@@ -1,4 +1,4 @@
-.header{ 
+.header{
     &__nav{
         padding: 37px 71px;
         display: flex;
@@ -6,19 +6,10 @@
         align-items: center;
         &-menu {
             display: flex;
-            max-width: 714px;
+            max-width: 970px;
             width: 100%;
             justify-content: space-between;
-            &.nav-burger {
-                display: block;
-                margin-bottom: 30px;
-                flex-direction: column;
-                align-items: center;
-            }
-            @include media(1320px){
-                display: none;
-            }
-        }     
+        }
         &-link {
             color: $white;
             font-weight: 400;
@@ -61,6 +52,7 @@
         }
         &-lang {
             color: white;
+            cursor: pointer;
             font-weight: 400;
             font-size: 16px;
             line-height: 150%;
@@ -89,22 +81,46 @@
                 display: block;
             }
         }
-        &-burger{
+    }
+    &__container{
+        display: flex;
+        // flex-direction: row;
+    }
+    &__content{
+        position: relative;
+        &-offer{
+            max-width: 630px;
+            width: 100%;
+            height: 385px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            gap: 40px;
+        }
+        &-title{
+            width: 100%;
+        }
+        &-text{
+            max-width: 520px;
+            width: 100%;
+        }
+        &-btn{
+            margin-top: 10px;
+        }
+        &-img{
             position: absolute;
-            right: -100%;
-            bottom: 0;
-            width: 300px;
-            height: 100vh;
-            display: none;
-            transition: right 500ms ease;
-            overflow: auto;
-            background: #06071B;
-            @include media(1320px){
-                display: block;            
-            }
-            &.active {
-                right: 0;
-            }
+            left: -10%;
+            top: 0%;
+        }
+        &-images{
+            max-width: 633px;
+            width: 100%;
+            height: 477px;
+            position: relative;
+        }
+        &-line{
+            position: absolute;
+            top: 0;
         }
     }
 }

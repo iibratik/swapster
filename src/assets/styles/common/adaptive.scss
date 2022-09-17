@@ -1,3 +1,9 @@
+@media (max-width:1600px) {
+    .header__nav-menu{
+        max-width: 720px;
+    }
+}
+
 @include media(992px){
     .footer{
         &__middle {

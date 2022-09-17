@@ -11,6 +11,6 @@ module.exports = defineConfig({
       .end();
   },
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/my-project/'
+  ? '/swapster/'
   : '/'
 })

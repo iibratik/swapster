@@ -1,22 +1,20 @@
 <template>
     <header class="header">
         <Navbar/>
+        <HeaderContent/>
     </header>
 </template>
 
 <script>
+import Navbar from '@/components/Navbar.vue';
+import HeaderContent from '@/components/header/Header-Wallet.vue';
+import { mapGetters } from 'vuex';
 
-import Navbar from "@/components/Navbar.vue";
 
 export default {
-    components: { Navbar },
-    computed:{
-        userLang(){
-            let userLang = navigator.language || navigator.userLanguage;
-            console.log(userLang);
-        }
-    }
+components: { Navbar, HeaderContent },
+computed:{
+    ...mapGetters(["getLang"])
 }
-
-
+}
 </script>
