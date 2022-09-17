@@ -16,7 +16,7 @@
                 Присоединиться
             </green-btn>
         </div>
-        <glov-bg>dawdwad</glov-bg>
+        <glov-bg></glov-bg>
     </nav>
 </template>
 

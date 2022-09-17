@@ -16,9 +16,10 @@
         width: 100%;
         height: 460px;
         position: absolute;
+        z-index: -1;
     }
     .glov-bg{
-        background: rgba(171, 0, 251, 0.7);
+        background: #ab00fb;
         filter: blur(327px);
     }
 </style>

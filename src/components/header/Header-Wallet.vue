@@ -17,7 +17,11 @@
           <img src="@/assets/images/header/header-5.png" alt="" class="header__content-img-5">
         </div>
       </div>
-      <!-- <img src="@/assets/images/icons/header/line.svg" alt="" class="header__content-line"> -->
+      <div class="header__content-cicle-1 header__content-cicle"></div>
+      <div class="header__content-cicle-2 header__content-cicle"></div>
+      <!-- <img src="@/assets/images/icons/header/cicle.svg" alt="" class="header__content-cicle-1 header-cicle"> -->
+      <!-- <img src="" alt="" class="header__content-cicle-2"> -->
+      <img src="@/assets/images/icons/header/line.svg" alt="" class="header__content-line">
   </div>
 </template>
 
