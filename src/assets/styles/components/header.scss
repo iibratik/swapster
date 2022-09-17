@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header{
     overflow: hidden;
     .burger {
@@ -23,6 +24,9 @@
             }
     }
     }
+=======
+.header{ 
+>>>>>>> 9d31ae2a1572f92c7c6fcc12c672e5a2521b1820
     &__nav{
         padding: 37px 71px;
         display: flex;
@@ -33,12 +37,26 @@
             max-width: 714px;
             width: 100%;
             justify-content: space-between;
+<<<<<<< HEAD
             align-self: center;
             flex-grow: 1;
             @include media(1320px){
+=======
+            &.nav-burger {
+                display: block;
+                margin-bottom: 30px;
+>>>>>>> 9d31ae2a1572f92c7c6fcc12c672e5a2521b1820
                 flex-direction: column;
+                align-items: center;
             }
+            @include media(1320px){
+                display: none;
             }
+<<<<<<< HEAD
+            }
+=======
+        }     
+>>>>>>> 9d31ae2a1572f92c7c6fcc12c672e5a2521b1820
         &-link {
             color: $white;
             font-weight: 400;
@@ -55,10 +73,11 @@
                 text-align: center;
                 padding: 10px;
                 &:hover {
-                    padding-bottom: 0;
-                    border-bottom: 0;
+                    padding-bottom: 10px;
+                    border-bottom: 0px;
                 }
             }
+
         }
         &-signin {
             padding: 13px 37px;
@@ -75,7 +94,7 @@
             align-items: center;
             gap: 20px;
             @include media(1320px){
-                flex-direction: column;
+                display: none;
             }
         }
         &-lang {
@@ -95,25 +114,36 @@
             display: flex;
             gap: 7px;
         }
+        &-translate {
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
         &-btn {
+            background: none;
+            outline: none;
+            border: none;
             display: none;
             @include media(1320px){
                 display: block;
             }
         }
-    }
-    .bg {
-        position: absolute;
-        background: rgb(0, 0, 0, 0.30);
-        height: 100vh;
-        width: 100vw;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: none;
-        &.active {
-            display: block;
+        &-burger{
+            position: absolute;
+            right: -100%;
+            bottom: 0;
+            width: 300px;
+            height: 100vh;
+            display: none;
+            transition: right 500ms ease;
+            overflow: auto;
+            background: #06071B;
+            @include media(1320px){
+                display: block;            
+            }
+            &.active {
+                right: 0;
+            }
         }
     }
 }

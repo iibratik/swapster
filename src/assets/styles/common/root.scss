@@ -10,17 +10,18 @@ a {
 ul {
     list-style: none;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 html {
     background: #06071B;
-    overflow-x: hidden;
 }
 
 
 body{
     font-family: 'SF';
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 .container {
