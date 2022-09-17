@@ -16,7 +16,15 @@ export default {
         Header,
         Footer
     },
+    data(){
+        return{
+            userLang:"",
+        }
+    },
 
-}
+    }
 
 </script>
+<style>
+
+</style>

@@ -1,40 +1,51 @@
 import { createStore } from 'vuex'
+import Lang from '@/assets/scripts/Lang/Lang';
 
 export default createStore({
   state: {
     menuList: [{
       id: 1,
-      title: "Главная",
+      title: Lang.ru.mainNavLink,
     },
     {
       id:2,
-      title: "Активы и тарифы"
+      title: Lang.ru.tariffsLink,
     },
     {
       id:3,
-      title: "Как это работает",
+      title: Lang.ru.worksLink,
     },
     {
       id:4,
-      title: "Крипто-проверки"
+      title: Lang.ru.checkLink
     },
     {
       id:5,
-      title: "Блог"
+      title: Lang.ru.blogLink
     },
     {
       id:6,
-      title: "Поддержка",
-    },]
+      title: Lang.ru.support,
+    },],
+    lang:Lang,
+    MainLang: window.navigator.language,
   },
   getters: {
     getMenuList(state){
       return state.menuList
+    },
+    getLang(state){
+      if (MainLang == "ru-RU") {
+        return state.lang.ru
+      }else{
+        return state.lang.en
+      }
     }
   },
   mutations: {
   },
   actions: {
+
   },
   modules: {
   }

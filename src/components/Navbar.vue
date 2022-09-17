@@ -16,7 +16,6 @@
                     Присоединиться
                 </green-btn>
             </div>
-            <button class="burger"><i class="fas fa-bars"></i></button>
     </nav>
 </template>
 
