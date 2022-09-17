@@ -1,6 +1,14 @@
 @import "@/assets/styles/common/common.scss";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 @import "@/assets/styles/common/fonts.scss";
 @import "@/assets/styles/common/grid.scss";
 @import "@/assets/styles/common/root.scss",
-        "@/assets/styles/components/header.scss",
-        "@/assets/styles/components/footer.sass";
+"@/assets/styles/components/header.scss",
+"@/assets/styles/components/footer.sass";
+
+
+
+
+
+
+@import "@/assets/styles/common/adaptive.scss";

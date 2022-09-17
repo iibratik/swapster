@@ -2,7 +2,6 @@
     <header class="header">
         <Navbar/>
         <HeaderContent/>
-        <green-btn>Содержание кнопки</green-btn>
     </header>
 </template>
 

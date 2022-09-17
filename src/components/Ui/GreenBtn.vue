@@ -7,12 +7,6 @@
 <script>
     export default {
         name:'green-btn',
-        props:{
-            className:{
-                type:String,
-                default:'btn'
-            }
-        }
     }
 </script>
 
