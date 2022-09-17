@@ -3,4 +3,68 @@
     background: #1F2146
     &__container
         @extend .container
+    &__up
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 30px 
+        &-start
+            display: flex
+            align-items: center
+            gap: 56px
+        &-gmail
+            display: flex
+            gap: 10px
+            font-size: 16px
+            line-height: 220%
+            color: #FFFFFF
+        &-btn
+            display: flex
+            align-items: center
+            gap: 10px
+            padding: 13px 32px
+            color: #07DBB4
+            border: 1px solid #07DBB4
+            border-radius: 10px
+    &__middle
+        display: flex
+        padding: 25px 0 50px 0
+        gap: 150px
+        border-top: 1px solid rgba(6, 7, 27, 0.4) 
+        border-bottom: 1px solid rgba(6, 7, 27, 0.4)
+        &-menu 
+            display: flex
+            flex-direction: column
+            gap: 20px
+        &-link 
+            font-size: 16px
+            color: #FFFFFF
+        &-title 
+            margin-bottom: 15px 
+            font-size: 16px
+            color: #FFFFFF
+            opacity: 0.6
+        &-block 
+            display: flex
+            flex-direction: column
+            gap: 30px
+        &-icons 
+            display: flex
+            margin-top: 10px 
+            gap: 10px
+    &__bottom
+        display: flex
+        justify-content: space-between
+        padding-top: 20px 
+        &-menu 
+            display: flex
+            gap: 100px
+        &-link 
+            font-size: 16px
+            opacity: 0.3
+            color: #FFFFFF
+        &-copyright
+            opacity: 0.3
+            color: #FFFFFF
+            font-size: 16px
         
