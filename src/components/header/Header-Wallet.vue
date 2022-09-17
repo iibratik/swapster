@@ -10,10 +10,14 @@
             </button>
         </div>
         <div class="header__content-images">
-          <img src="@/assets/images/header/header-5.png" alt="" class="header__content-img">
+          <img src="@/assets/images/header/header-1.png" alt="" class="header__content-img-1">
+          <img src="@/assets/images/header/header-2.png" alt="" class="header__content-img-2">
+          <img src="@/assets/images/header/header-3.png" alt="" class="header__content-img-3">
+          <img src="@/assets/images/header/header-4.png" alt="" class="header__content-img-4">
+          <img src="@/assets/images/header/header-5.png" alt="" class="header__content-img-5">
         </div>
       </div>
-      <img src="@/assets/images/icons/header/line.svg" alt="" class="header__content-line">
+      <!-- <img src="@/assets/images/icons/header/line.svg" alt="" class="header__content-line"> -->
   </div>
 </template>
 
