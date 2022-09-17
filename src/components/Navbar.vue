@@ -23,10 +23,6 @@
             </ul>
         <a href="" class="header__nav-signin">Присоединиться</a>
         </div>
-<<<<<<< HEAD
-        <button @click="burger = !burger" class="header__nav-btn">burger</button>
-=======
->>>>>>> 9d31ae2a1572f92c7c6fcc12c672e5a2521b1820
     </nav>
 </template>
 

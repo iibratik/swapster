@@ -1,32 +1,4 @@
-<<<<<<< HEAD
 .header{
-    overflow: hidden;
-    .burger {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        flex-grow: 1;
-        justify-content: space-between;
-        @include media(1320px) {
-            flex-direction: column;
-            position: absolute;
-            top: 0;
-            right: -100%;
-            background: #090a1f;
-            width: 300px;
-            height: 100vh;
-            padding: 50px 0;
-            border-right: 1px solid rgb(39, 39, 68);
-            overflow: hidden;
-            transition: right 300ms;
-            &.active {
-                right: 0;
-            }
-    }
-    }
-=======
-.header{ 
->>>>>>> 9d31ae2a1572f92c7c6fcc12c672e5a2521b1820
     &__nav{
         padding: 37px 71px;
         display: flex;
@@ -37,26 +9,16 @@
             max-width: 714px;
             width: 100%;
             justify-content: space-between;
-<<<<<<< HEAD
-            align-self: center;
-            flex-grow: 1;
-            @include media(1320px){
-=======
             &.nav-burger {
                 display: block;
                 margin-bottom: 30px;
->>>>>>> 9d31ae2a1572f92c7c6fcc12c672e5a2521b1820
                 flex-direction: column;
                 align-items: center;
             }
             @include media(1320px){
                 display: none;
             }
-<<<<<<< HEAD
-            }
-=======
-        }     
->>>>>>> 9d31ae2a1572f92c7c6fcc12c672e5a2521b1820
+        }
         &-link {
             color: $white;
             font-weight: 400;
@@ -138,7 +100,7 @@
             overflow: auto;
             background: #06071B;
             @include media(1320px){
-                display: block;            
+                display: block;
             }
             &.active {
                 right: 0;
