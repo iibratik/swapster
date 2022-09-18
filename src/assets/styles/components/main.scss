@@ -57,6 +57,31 @@
             opacity: 0.6;
         }
     }
+    &__supported {
+        margin-bottom: 100px;
+        &-block{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-title {
+            margin-bottom: 20px;
+            @extend .title
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+            opacity: 0.6;
+            max-width: 648px;
+            width: 100%;
+            text-align: center;
+        }
+        &-img {
+            width: 100%;
+        }
+    }
     &__functions{
         margin-bottom: 100px;
         & h2.title {
