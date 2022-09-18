@@ -59,6 +59,45 @@ export default createStore({
         text: "Проверить происхождение средств можно заранее, чтобы быть уверенными, что они получены честным, не преступным путем. Компания всегда заботимся о безопасности клиентов."
       },
     ],
+    appFunctionsList:[
+      {
+        id:1,
+        title:"Прием криптовалют",
+        text:"Принимайте большинство криптоактивов с любых кошельков без комиссий",
+        icon: "reception_crypto.svg"
+      },
+      {
+        id:2,
+        title:"Отправка криптовалют",
+        text:"Принимайте большинство криптоактивов с любых кошельков без комиссий",
+        icon: "send_coin.svg"
+      },
+      {
+        id:3,
+        title:"Обмен криптовалют",
+        text:"Принимайте большинство криптоактивов с любых кошельков без комиссий",
+        icon: "trade.svg"
+      },
+      {
+        id:4,
+        title:"Пополнение и вывод на карты банков",
+        text:"Принимайте большинство криптоактивов с любых кошельков без комиссий",
+        icon: "card_replenishment.svg",
+        fourth: true
+      },
+      {
+        id:5,
+        title:"Заработок на рефералах",
+        text:"Принимайте большинство криптоактивов с любых кошельков без комиссий",
+        icon: "referrals_earnings.svg"
+      },
+      {
+        id:6,
+        title:"Проверка транзакция",
+        text:"Принимайте большинство криптоактивов с любых кошельков без комиссий",
+        icon: "transaction_check.svg"
+      },
+    ],
     footerMenuList:[
       {
         id:1,
@@ -136,6 +175,9 @@ export default createStore({
     },
     getBenefitsList(state){
       return state.benefitsList
+    },
+    getAppFunctionsList(state){
+      return state.appFunctionsList;
     },
     getFooterMenuList(state){
       return state.footerMenuList
