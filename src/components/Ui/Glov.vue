@@ -19,7 +19,7 @@
         z-index: -1;
     }
     .glov-bg{
-        background: #ab00fb;
+        background: rgb(247, 0, 255);
         filter: blur(327px);
     }
 </style>

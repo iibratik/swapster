@@ -39,8 +39,7 @@ body{
 }
 
 .run-btn{
-    max-width: 280px;
-    width: 100%;
+    width: 280px;
     height: 60px;
     background: #07DBB4;
     box-shadow: 0px 0px 14px rgba(66, 232, 224, 0.3);
@@ -66,6 +65,16 @@ body{
     letter-spacing: 0.035em;
     font-weight: 500;
     color: $white;
+    @include media(1199px){
+        font-size: 50px;
+        line-height: 62px;
+        text-align: center;
+    }
+    @include media(540px){
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.035em;
+    }
 }
 .title{
     font-weight: 500;
@@ -77,6 +86,22 @@ body{
 .small-text{
     font-weight: 400;
     font-size: 18px;
+    line-height: 150%;
+    color: $white;
+    opacity: 0.6;
+    @include media(992px){
+        text-align: center;
+    }
+    &-v2{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $white;
+    }
+}
+.micro-text{
+    font-weight: 500;
+    font-size: 12px;
     line-height: 150%;
     color: $white;
     opacity: 0.6;
