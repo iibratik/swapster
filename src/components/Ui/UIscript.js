@@ -1,6 +1,7 @@
 import GreenBtn from '@/components/Ui/GreenBtn'
-import MainBtn from '@/components/Ui/MainBtn'
+import Glov from '@/components/Ui/Glov'
+
 export default [
     GreenBtn,
-    MainBtn
+    Glov
 ];
