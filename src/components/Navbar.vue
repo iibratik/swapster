@@ -3,10 +3,10 @@
         <div class="header__nav-logo">
             <a href="#!"><img src="@/assets/images/logo.png" alt="" class="logo"></a>
         </div>
-            <ul class="header__nav-menu">
+            <ul class="header__nav-menu desctop-block">
                 <li v-for="link in getMenuList" :key="link.id"><a href="#!" class="header__nav-link">{{link.title}}</a></li>
             </ul>
-            <div class="header__nav-block">
+            <div class="header__nav-block desctop-block">
                 <div class="header__nav-translation">
                     <h3 class="header__nav-lang" @click="changeLang" :class="{active: ruActive}">ru</h3>
                     <p class="header__nav-lang">|</p>
@@ -16,6 +16,7 @@
                     Присоединиться
                 </green-btn>
             </div>
+         <button class="header__nav-burger"><i class="fa-solid fa-bars"></i></button>
     </nav>
 </template>
 
@@ -27,7 +28,6 @@ export default {
         return {
             ruActive: localStorage.getItem('lang') === 'ru'? true : false,
             enActive: localStorage.getItem('lang') === 'en'? true : false,
-
             ruActive:true,
             enActive: false,
             burger: false,
