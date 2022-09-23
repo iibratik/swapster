@@ -27,6 +27,26 @@ export default createStore({
       id:6,
       title: "Поддержка",
     }],
+    importantList:[
+      {
+        id:1,
+        title:"Бесплатные транзакции",
+        icon: "main__important-transaction.svg",
+        descr: "Транзакции другим пользователям Swapster абсолютно бесплатны. Вы можете одним кликом отправить другу любую криптовалюту за секунду — достаточно знать его ID."
+      },
+      {
+        id:2,
+        title:"Почти моментальные переводы",
+        icon: "main__important-transfer.svg",
+        descr: "В комиссиях Swapster уже заложено щедрое вознаграждение майнерам, поэтому все ваши переводы будут доставлены максимально быстро. USDT — 1 минута. ВТС, ЕТН — 10 минут."
+      },
+      {
+        id:3,
+        title:"Анонимность и безопасность",
+        icon: "main__important-anonim.svg",
+        descr: "Мы не собираем и не передаём персональные данные пользователей. Вам доступны все функции бота без верификации личности. Безопасность ваших средств обеспечена безопасностью вашего Telegram-аккаунта."
+      },
+    ],
     benefitsList:[
       {
         id: 1,
@@ -172,6 +192,9 @@ export default createStore({
   getters: {
     getMenuList(state){
       return state.menuList
+    },
+    getImportantList(state){
+      return state.importantList
     },
     getBenefitsList(state){
       return state.benefitsList

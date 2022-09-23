@@ -1,6 +1,7 @@
 <template>
 <main class="main">
     <div class="main__container">
+        <MainImportant />
         <MainBenefits />
         <MainSupportedAssets />
         <MainAppFunctions />
@@ -13,12 +14,14 @@
 import MainBenefits from "@/components/Main/MainBenefits.vue";
 import MainAppFunctions from "@/components/Main/MainAppFunctions.vue";
 import MainSupportedAssets from "@/components/Main/MainSupportedAssets.vue";
+import MainImportant from "@/components/Main/MainImportant.vue"
 
 export default {
     components: {
         MainBenefits,
         MainAppFunctions,
-        MainSupportedAssets
+        MainSupportedAssets,
+        MainImportant
     }
 }
 
