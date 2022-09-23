@@ -11,6 +11,14 @@
             width: 100%;
             justify-content: space-between;
         }
+        &-burger{
+            display: none;
+            background: $black;
+            i{
+                color:$white;
+                font-size: 24px;
+            }
+        }
         &-link {
             color: $white;
             font-weight: 400;
@@ -47,12 +55,9 @@
             display: flex;
             align-items: center;
             gap: 20px;
-            @include media(1320px){
-                display: none;
-            }
         }
         &-lang {
-            color: white;
+            color: $white;
             cursor: pointer;
             font-weight: 400;
             font-size: 16px;

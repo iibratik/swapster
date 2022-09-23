@@ -1,7 +1,26 @@
-@media (max-width:1600px) {
+@include media(1600px){
     .header__nav-menu{
         max-width: 720px;
     }
+    .header__nav{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width:1300px){
+    .header__nav{
+        &-menu{
+            max-width: none;
+            margin: 0 15px;
+        }
+        &-link{
+            font-size: 15px;
+        }
+        &-block{
+            flex-direction: column-reverse;
+        }
+    }
+
 }
 
 @include media(1199px){
@@ -15,7 +34,7 @@
                 &-2{
                     bottom: 75%;
                     left: 70%;
-                }   
+                }
             }
             &-line{
                 display: none;
@@ -48,6 +67,15 @@
 }
 
 
+@include media(1100px){
+    .desctop-block{
+        display: none;
+    }
+    .header__nav-burger{
+        display: block;
+    }
+
+}
 @include media(992px){
     .header{
         &__container{
@@ -175,3 +203,4 @@
         }
     }
 }
+
