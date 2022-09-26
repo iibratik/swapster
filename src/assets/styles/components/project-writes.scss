@@ -1,0 +1,34 @@
+.project-writes{
+    &-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+.slider-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: $purp;
+    background: none;
+    border: 1px solid $purp;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+    &:hover{
+        border:1px solid $lightGreen;
+        color:$lightGreen;
+    }
+    & i{
+        font-size: 24px;
+    }
+}
