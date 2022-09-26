@@ -1,5 +1,5 @@
 <template>
-    <a href="#" class="btn btn-green">
+    <a @click.prevent href="#" class="btn btn-green">
     <slot></slot>
     </a>
 </template>
@@ -10,7 +10,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '@/assets/styles/common/common.scss';
     .btn{
     padding: 13px 37px;
@@ -24,8 +24,10 @@
         border: 2px solid $lightGreen;
         filter: drop-shadow(0px 0px 11px #45AFC7);
         border-radius: 15px;
+        transition: all 300ms ease-in-out;
         &:hover{
-
+            background: $lightGreen;
+                
         }
     }
 </style>
