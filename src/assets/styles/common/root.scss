@@ -83,6 +83,15 @@ body{
     letter-spacing: 0.035em;
     color: $white;
 }
+.text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: $white;
+    opacity: 0.8;
+    
+}
 .small-text{
     font-weight: 400;
     font-size: 18px;
@@ -93,10 +102,12 @@ body{
         text-align: center;
     }
     &-v2{
+        text-align: center;
         font-weight: 500;
         font-size: 16px;
         line-height: 150%;
         color: $white;
+        opacity: 0.6;
     }
 }
 .micro-text{

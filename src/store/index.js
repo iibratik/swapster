@@ -98,6 +98,36 @@ export default createStore({
         icon: "transaction_check.svg"
       },
     ],
+    mainNumbersItems:[
+      {
+        id:1,
+        icon:'swapster-user.svg',
+        number:'65 000',
+        title:'человек',
+        descr:'уже используют криптокошелек Swapster'
+      },
+      {
+        id:2,
+        icon:'swapster-document.svg',
+        number:'300 000',
+        title:'транзакций',
+        descr:' было совершено с момента запуска'
+      },
+      {
+        id:3,
+        icon:'swapster-moneys.svg',
+        number:'27 000 $',
+        title:'заработано',
+        descr:'было заработано нашими пользователями за привлечении своих друзей'
+      },
+      {
+        id:4,
+        icon:'swapster-clock.svg',
+        number:'1,5',
+        title:'секунды',
+        descr:'среднее время отправки транзакции'
+      },
+    ],
     footerMenuList:[
       {
         id:1,
@@ -178,6 +208,9 @@ export default createStore({
     },
     getAppFunctionsList(state){
       return state.appFunctionsList;
+    },
+    getNumbersItems(state){
+      return state.mainNumbersItems;
     },
     getFooterMenuList(state){
       return state.footerMenuList
