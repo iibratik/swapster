@@ -5,9 +5,6 @@
         flex-direction: column;
         gap: 100px;
     }
-
-    // main__benefits
-
     &__benefits {
         &-block {
             display: grid;
@@ -272,4 +269,3 @@
             opacity: 0.6;
         }
     }
-}

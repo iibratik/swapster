@@ -8,12 +8,12 @@
             </ul>
             <div class="header__nav-block desctop-block">
                 <div class="header__nav-translation">
-                    <h3 class="header__nav-lang" @click="changeLang" :class="{active: ruActive}">ru</h3>
+                    <h3 class="header__nav-lang" @click="switchingLang('ru'), changeLang()" :class="{active:ruActive}">ru</h3>
                     <p class="header__nav-lang">|</p>
-                    <h3 class="header__nav-lang" @click="changeLang" :class="{active: enActive}">en</h3>
+                    <h3 class="header__nav-lang" @click="switchingLang('en'),changeLang()" :class="{active:enActive}">en</h3>
                 </div>
                 <green-btn href="#">
-                    Присоединиться
+                    {{$store.state.btnJoin}}
                 </green-btn>
             </div>
          <button class="header__nav-burger"><i class="fa-solid fa-bars"></i></button>
@@ -21,15 +21,13 @@
 </template>
 
 <script>
-
+import { mapMutations} from 'vuex'
 
 export default {
     data(){
         return {
-            ruActive: localStorage.getItem('lang') === 'ru'? true : false,
-            enActive: localStorage.getItem('lang') === 'en'? true : false,
-            ruActive:true,
-            enActive: false,
+            ruActive: this.$store.state.currentActiveLang == 'ru',
+            enActive: this.$store.state.currentActiveLang == 'en',
             burger: false,
         }
     },
@@ -39,29 +37,24 @@ export default {
         },
     },
     methods:{
+        ...mapMutations(['switchingLang']),
         changeLang(){
-            if (localStorage.getItem('lang') == "en") {
-
-                this.ruActive = false;
-                this.enActive = true;
-                localStorage.setItem('lang', 'ru')
-            }else {
-                localStorage.setItem('lang', 'en')
-                this.enActive = false;
-                this.ruActive = true;
-
+            if (this.ruActive) {
+                this.ruActive = false
+                this.enActive = true
+            }else{
+                this.enActive = false
+                this.ruActive= true
             }
 
         }
     },
+    watch(){
+        this.ruActive,
+        this.enActive
+    },
     created(){
-            if (window.navigator.language === 'en-US') {
-                localStorage.setItem("lang","en")
-            }else if(window.navigator.language === 'ru-Ru') {
-                localStorage.setItem("lang","ru")
-            }
         }
 
 }
-
 </script>
