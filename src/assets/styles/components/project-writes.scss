@@ -1,0 +1,107 @@
+.project {
+  &-writes {
+    margin-bottom: 100px;
+    &-wrapper {
+      display: flex;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 30px;
+      transition: all 300ms  ease-in-out;
+    }
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    &-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    &-slider {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      overflow: hidden;
+    }
+  }
+  &-slide {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 28px 51px 34px 22px;
+    background: #121326;
+    border-radius: 5px;
+    &-company-name {
+      margin-top: 11px;
+      color: #ffffff;
+      opacity: 0.6;
+      font-family: 'SF';
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+    }
+    &-title {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      opacity: 0.8;
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      min-width: 290px;
+      width: 100%;
+    }
+    &-img {
+      max-width: 160px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -15%;
+        width: 2px;
+        height: 150%;
+        background: linear-gradient(#4e067e, #42e8e0);
+        transform: translateY(-15%);
+      }
+    }
+    &-link{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #8287F3;
+    }
+  }
+}
+.slider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  color: $purp;
+  background: none;
+  border: 1px solid $purp;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    border: 1px solid $lightGreen;
+    color: $lightGreen;
+  }
+  & i {
+    font-size: 24px;
+  }
+}

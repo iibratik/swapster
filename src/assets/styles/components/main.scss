@@ -1,12 +1,14 @@
 .main {
     &__container {
         @extend .container;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
     }
 
     // main__benefits
 
     &__benefits {
-        margin-bottom: 100px;
         &-block {
             display: grid;
             grid-template-columns: repeat(6,1fr);
@@ -30,7 +32,7 @@
             &:nth-child(2){
                 padding: 30px 39px 99px 40px;
                 grid-column: span 2;
-            } 
+            }
             &:nth-child(3){
                 padding: 34px 39px 51px 40px;
                 grid-column: span 2;
@@ -62,7 +64,6 @@
     }
     // main__supported
     &__supported {
-        margin-bottom: 100px;
         &-block{
             width: 100%;
             display: flex;
@@ -88,7 +89,6 @@
     }
     // main__functions
     &__functions{
-        margin-bottom: 100px;
         & h2.title {
             text-align: center;
             margin-bottom: 40px;
@@ -136,7 +136,7 @@
         gap: 45px;
         margin-bottom: 100px;
         &-num{
-            color: transparent;    
+            color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
             background-image: linear-gradient(45deg, #4E067E -17.82%, #42E8E0 106.11%);
@@ -216,7 +216,7 @@
     }
 }
 
-@keyframes animate 
+@keyframes animate
 {
     0%{
         transform: rotate(0deg);
@@ -225,12 +225,51 @@
         transform: rotate(360deg);
     }
 }
-@keyframes animate-v2 
+@keyframes animate-v2
 {
     0%{
         transform: rotate(180deg);
     }
     100%{
         transform: rotate(540deg);
+    }
+}
+    &__important{
+        display: flex;
+        gap: 48px;
+        &-right {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        &-block{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        &-item{
+            display: flex;
+            max-width: 605px;
+            width: 100%;
+            gap: 18px;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &-title {
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        &-descr {
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF;
+            opacity: 0.6;
+        }
     }
 }
