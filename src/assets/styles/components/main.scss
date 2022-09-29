@@ -211,26 +211,6 @@
         }
 
     }
-}
-
-@keyframes animate
-{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-@keyframes animate-v2
-{
-    0%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(540deg);
-    }
-}
     &__important{
         display: flex;
         gap: 48px;
@@ -269,3 +249,24 @@
             opacity: 0.6;
         }
     }
+}
+
+@keyframes animate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-v2
+{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(540deg);
+    }
+}
+
