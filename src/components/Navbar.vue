@@ -16,7 +16,25 @@
                     {{$store.state.btnJoin}}
                 </green-btn>
             </div>
-         <button class="header__nav-burger"><i class="fa-solid fa-bars"></i></button>
+            <button @click="burger = !burger" class="header__nav-burger"><i class="fa-solid fa-bars"></i></button>
+            <transition name="nav-burger">
+                <div class="mobile-block" v-if="burger">
+                    <ul class="header__nav-menu mobile-nav">
+                        <li v-for="link in getMenuList" :key="link.id"><a href="#!" class="header__nav-link">{{link.title}}</a></li>
+                    </ul>
+                    <div class="header__nav-block mobilde-nav">
+                        <div class="header__nav-translation">
+                            <h3 class="header__nav-lang" @click="switchingLang('ru'), changeLang()" :class="{active:ruActive}">ru</h3>
+                            <p class="header__nav-lang">|</p>
+                            <h3 class="header__nav-lang" @click="switchingLang('en'),changeLang()" :class="{active:enActive}">en</h3>
+                        </div>
+                        <green-btn href="#">
+                            {{$store.state.btnJoin}}
+                        </green-btn>
+                    </div>
+                </div>
+            </transition>
+
     </nav>
 </template>
 

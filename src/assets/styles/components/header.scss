@@ -13,6 +13,7 @@
         }
         &-burger{
             display: none;
+            z-index: 999;
             background: $black;
             i{
                 color:$white;
@@ -250,4 +251,34 @@
 }
 .glov-bg{
     right: 0;
+}
+.mobile{
+    &-block{
+        display: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        z-index: 900;
+        background: #06071B;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &-nav{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.nav-burger-enter-active,
+.nav-burger-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav-burger-enter-from,
+.nav-burger-leave-to {
+    opacity: 0;
+
 }
