@@ -7,11 +7,11 @@
     }
 }
 
-@media (max-width:1300px){
+@include media(1300px){
     .header__nav{
         &-menu{
             max-width: none;
-            margin: 0 15px;
+            margin: 0 0;
         }
         &-link{
             font-size: 15px;
@@ -55,6 +55,11 @@
 
 
 @include media(1100px){
+    .mobile{
+        &-block{
+            display: block;
+        }
+    }
     .desctop-block{
         display: none;
     }
@@ -77,6 +82,34 @@
             }
         }
     }
+    .main {
+        &__important {
+            flex-direction: column;
+            align-items: center;
+            & h2.title {
+                text-align: center;
+            }
+        }
+        &__functions{
+            &-block {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        &__benefits {
+            &-item {
+                &:nth-child(1){
+                    grid-column: span 6;
+                }
+                &:nth-child(2){
+                    grid-column: span 3;
+                }
+                &:nth-child(3){
+
+                    grid-column: span 3;
+                }
+            }
+        }
+    }
     .footer{
         &__middle {
             gap: 50px;
@@ -90,6 +123,38 @@
 }
 
 @include media(767px){
+    .main{
+        &__benefits {
+            &-block {
+                grid-template-columns: repeat(1,1fr);
+            }
+            &-item {
+                &:nth-child(1){
+                    grid-column: span 1;
+                }
+                &:nth-child(2){
+                    grid-column: span 1;
+                }
+                &:nth-child(3){
+
+                    grid-column: span 1;
+                }
+                &:nth-child(4){
+                    grid-column: span 1;
+                }
+                &:nth-child(5){
+
+                    grid-column: span 1;
+                }
+            }
+        }
+        &__functions{
+            &-block {
+                gap: 15px;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }
     .footer{
         &__up{
             flex-direction: column;
@@ -146,6 +211,18 @@
                 }
         }
     }
+    .main {
+        &__important {
+            &-left {
+                display: none;
+            }
+        }
+        &__supported {
+            &-title {
+                text-align: center;
+            }
+        }
+    }
 }
 @include media(500px){
     .header{
@@ -190,4 +267,12 @@
         }
     }
 }
-
+@include media(368px){
+    .main {
+        &__supported {
+            &-title {
+                font-size: 35px;
+            }
+        }
+    }
+}

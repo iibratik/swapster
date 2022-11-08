@@ -13,6 +13,7 @@
         }
         &-burger{
             display: none;
+            z-index: 999;
             background: $black;
             i{
                 color:$white;
@@ -64,7 +65,7 @@
             line-height: 150%;
             opacity: 0.6;
             cursor: pointer;
-            &.active {
+            &.active{
                 opacity: 1;
                 font-weight: 700;
             }
@@ -148,29 +149,29 @@
                 position: absolute;
                 left: -30%;
                 bottom: 30%;
-            } 
+            }
             &-2{
                 position: absolute;
                 left: 5%;
                 bottom: 90%;
-            } 
+            }
             &-3{
                 position: absolute;
                 right: 30%;
                 top: -10%;
-            } 
+            }
             &-4{
                 position: absolute;
                 right: -20%;
                 bottom: 60%;
-            } 
+            }
             &-5{
                 position: absolute;
                 left: -10%;
                 top: 0%;
                 max-width: 633px;
                 width: 100%;
-            }    
+            }
         }
         &-box{
                 position: absolute;
@@ -187,7 +188,7 @@
                 flex-direction: column;
                 justify-content: flex-end;
             }
-                
+
             &__bg{
                 background: rgba(17, 13, 50, 0.5);
                 backdrop-filter: blur(3px);
@@ -250,4 +251,34 @@
 }
 .glov-bg{
     right: 0;
+}
+.mobile{
+    &-block{
+        display: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        z-index: 900;
+        background: #06071B;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &-nav{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.nav-burger-enter-active,
+.nav-burger-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav-burger-enter-from,
+.nav-burger-leave-to {
+    opacity: 0;
+
 }
