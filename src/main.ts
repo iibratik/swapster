@@ -10,4 +10,4 @@ components.forEach(component =>{
     app.component(component.name, component)
 })
 
-app.use(store).mount('#app')
+app.use(store).use(router).mount('#app')

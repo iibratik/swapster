@@ -4,8 +4,8 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'HomeVue',
-    component: HomeVue,
-    
+    component: () => HomeVue,
+
   },
 ]
 
