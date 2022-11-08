@@ -3,8 +3,9 @@ import HomeVue from '@/pages/Home.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
+    name: 'HomeVue',
     component: HomeVue,
+    
   },
 ]
 
