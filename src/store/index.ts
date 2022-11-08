@@ -7,6 +7,7 @@ export default createStore({
       currentLang: Lang.en,
       btnJoin: Lang.en.btnJoin,
       currentActiveLang: 'en',
+
       menuList: [{
         id: 1,
         title: Lang.en.mainNavLink,
@@ -31,7 +32,7 @@ export default createStore({
         id:6,
         title: Lang.en.support,
       },
-    ],
+    ] as Object[],
       importantList:[
         {
           id:1,
@@ -51,7 +52,7 @@ export default createStore({
           icon: "main__important-anonim.svg",
           descr: "Мы не собираем и не передаём персональные данные пользователей. Вам доступны все функции бота без верификации личности. Безопасность ваших средств обеспечена безопасностью вашего Telegram-аккаунта."
         },
-      ],
+      ] as Object[],
       benefitsList:[
         {
           id: 1,
@@ -83,7 +84,7 @@ export default createStore({
           title: "AML-проверка переводов и кошельков",
           text: "Проверить происхождение средств можно заранее, чтобы быть уверенными, что они получены честным, не преступным путем. Компания всегда заботимся о безопасности клиентов."
         },
-      ],
+      ] as Object[],
       appFunctionsList:[
         {
           id:1,
@@ -122,7 +123,7 @@ export default createStore({
           text:"Принимайте большинство криптоактивов с любых кошельков без комиссий",
           icon: "transaction_check.svg"
         },
-      ],
+      ] as Object[],
       mainNumbersItems:[
         {
           id:1,
@@ -152,7 +153,7 @@ export default createStore({
           title:'секунды',
           descr:'среднее время отправки транзакции'
         },
-      ],
+      ] as Object[],
       footerMenuList:[
         {
           id:1,
@@ -178,7 +179,7 @@ export default createStore({
           id:6,
           title: "Предложение"
         },
-      ],
+      ] as Object[],
       footerMenuCurrenty: [
         {
           id:1,
@@ -204,7 +205,7 @@ export default createStore({
           id:6,
           title: "USD Coin (USDC)"
         },
-      ],
+      ] as Object[],
       footerMenuIcons: [
         {
           id:1,
@@ -222,41 +223,41 @@ export default createStore({
           id:4,
           icon: "telegram.svg"
         },
-      ]
+      ] as Object[]
       }
   },
   getters: {
-    getMenuList(state){
+    getMenuList(state:any){
       return state.menuList
     },
-    getImportantList(state){
+    getImportantList(state:any){
       return state.importantList
     },
-    getBenefitsList(state){
+    getBenefitsList(state:any){
       return state.benefitsList
     },
-    getAppFunctionsList(state){
+    getAppFunctionsList(state:any){
       return state.appFunctionsList;
     },
-    getNumbersItems(state){
+    getNumbersItems(state:any){
       return state.mainNumbersItems;
     },
-    getFooterMenuList(state){
+    getFooterMenuList(state:any){
       return state.footerMenuList
     },
-    getFooterMenuCurrenty(state){
+    getFooterMenuCurrenty(state:any){
       return state.footerMenuCurrenty
     },
-    getFooterMenuIcons(state){
+    getFooterMenuIcons(state:any){
       return state.footerMenuIcons
     },
   },
   mutations: {
-    switchingLang(state, payload){
+    switchingLang(state:any, payload){
       if (payload == 'ru') {
         state.currentActiveLang = payload
         state.currentLang = Lang.ru
-        state.menuList.forEach(el=>{
+        state.menuList.forEach((el:any)=>{
           switch (el.id) {
             case 1:el.title = state.currentLang.mainNavLink
             break;
@@ -280,7 +281,7 @@ export default createStore({
       }else if (payload == 'en') {
         state.currentActiveLang = payload
         state.currentLang = Lang.en
-        state.menuList.forEach(el=>{
+        state.menuList.forEach((el:any)=>{
           switch (el.id) {
             case 1:el.title = state.currentLang.mainNavLink
             break;
