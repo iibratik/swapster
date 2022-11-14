@@ -7,8 +7,6 @@
         p.project-slide-title {{slideItem.body}}
         a.project-slide-link(:href="slideItem.link") Читать далее
             img(src="@/assets/images/slider-img/arrow-right.svg")
-
-
 </template>
 
 <script>
