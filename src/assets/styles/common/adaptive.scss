@@ -10,7 +10,7 @@
 @include media(1300px){
     .header__nav{
         &-menu{
-            max-width: none;
+            // max-width: none;
             margin: 0 0;
         }
         &-link{
@@ -225,6 +225,19 @@
     }
 }
 @include media(500px){
+    .title{
+        font-size: 30px;
+    }
+    .footer{
+        &__middle-actives{
+            display: none;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     .header{
         &__content{
             &-img{
@@ -265,6 +278,19 @@
                 flex-direction: column;
             }
         }
+    }
+}
+@include media(400px){
+    .project-slide{
+        flex-direction: column;
+        &-img{
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .title{
+        font-size: 18px;
     }
 }
 @include media(368px){
